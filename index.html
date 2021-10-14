@@ -10,10 +10,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/index.css">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+
   <title>Mateus Peverari - Portfolio</title>
 </head>
 
 <body>
+  <script>
+    window.addEventListener('scroll', function () {
+      let header = document.querySelector('header');
+      let windowPosition = window.scrollY > 0;
+      header.classList.toggle('scrolling-active', windowPosition);
+    })
+  </script>
+
   <div class="header-container">
     <header class="header">
       <a href="index.html">
@@ -39,6 +49,24 @@
     <div class="start-text">
       <h1>Hi, I'm Mateus.</h1>
       <p>I build websites from scratch to web!</p>
+    </div>
+
+    <div class="get-started">
+      <p>Get started</p>
+      <img src="assets/images/arrow.png" alt="arrow" class="arrow">
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h1>Portfolio</h1>
+    <img src="assets/images/laptop.png" alt="Website image">
+    <p>
+      <span class="title"> Agyle Intelligence 2019 </span>
+      <span class="text">
+        A platform for automating data collection and reporting throughout teams, operations and supply chains.
+      </span>
+
+    </p>
     </div>
   </section>
 </body>
