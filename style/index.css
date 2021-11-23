@@ -155,6 +155,7 @@
 
 .portfolio-button:hover {
   background: rgb(35, 13, 146);
+  transition: ease 0.2s;
 }
 
 .portfolio-button a {
